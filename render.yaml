@@ -10,9 +10,9 @@ services:
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
-      - key: DATABASE_URL
+      - key: postgres://one_small_thing_be_user:h7P8FssAkUYDB7p2tzKUZQ0JJMhJGAmI@dpg-cc4k9l98f8til1qqso2g-a/one_small_thing_be
         fromDatabase:
           name: One_Small_Thing_BE
-          property: postgres://one_small_thing_be_user:h7P8FssAkUYDB7p2tzKUZQ0JJMhJGAmI@dpg-cc4k9l98f8til1qqso2g-a/one_small_thing_be
+          property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
