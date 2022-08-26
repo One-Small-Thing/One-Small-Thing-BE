@@ -1,7 +1,7 @@
 databases:
-  - name: One_Small_Thing_BE
-    databaseName: One_Small_Thing_BE
-    user: postgres
+  - name: one_small_thing_be
+    databaseName: one_small_thing_be
+    user: one_small_thing_be_user
 
 services:
   - type: web
@@ -13,6 +13,6 @@ services:
       - key: DATABASE_URL
         fromDatabase:
           name: One_Small_Thing_BE
-          property: connectionString
+          property: postgres://one_small_thing_be_user:h7P8FssAkUYDB7p2tzKUZQ0JJMhJGAmI@dpg-cc4k9l98f8til1qqso2g-a/one_small_thing_be
       - key: RAILS_MASTER_KEY
         sync: false
