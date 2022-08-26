@@ -1,6 +1,8 @@
 class User < ApplicationRecord
 
-  validates_presence_of :name,
-                        :email
+  has_many :user_topics
+  has_many :topics, through: :user_topics
+
+  validates_presence_of :name, :email
   validates_uniqueness_of :email
 end
