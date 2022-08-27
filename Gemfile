@@ -38,6 +38,7 @@ gem "bootsnap", require: false
 gem 'faraday'
 gem 'figaro'
 gem 'jsonapi-serializer'
+gem 'net-http'
 
 group :development, :test do
   gem 'factory_bot_rails'
