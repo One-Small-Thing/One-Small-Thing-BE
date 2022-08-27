@@ -61,3 +61,5 @@ group :test do
   gem 'vcr'
   gem 'webmock'
 end
+
+gem "graphql", "~> 2.0"
