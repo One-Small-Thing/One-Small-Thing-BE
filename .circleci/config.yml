@@ -56,6 +56,8 @@ jobs:
         #  command: bundle exec rails db:create db:schema:load --trace
       # - run: bundle exec rails db:create db:scema:load --trace
       - ruby/rspec-test
+      - store_test_results:
+          path: test-results
 # We use workflows to orchestrate the jobs that we declared above.
 workflows:
   version: 2
