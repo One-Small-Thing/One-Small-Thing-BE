@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  ruby: circleci/ruby@1.0
+  ruby: circleci/ruby@1.8.0
 
 # Define the jobs we want to run for this project
 jobs:
@@ -51,9 +51,9 @@ jobs:
       - run:
           name: Wait for DB
           command: dockerize -wait tcp://localhost:5432 -timeout 1m
-      - run:
-          name: Database setup
-          command: bundle exec rails db:create db:schema:load --trace
+      #- run:
+       #   name: Database setup
+        #  command: bundle exec rails db:create db:schema:load --trace
       # - run: bundle exec rails db:create db:scema:load --trace
       - ruby/rspec-test
 # We use workflows to orchestrate the jobs that we declared above.
