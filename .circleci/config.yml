@@ -30,14 +30,14 @@ jobs:
         environment: # add POSTGRES environment variables.
           POSTGRES_USER: One_Small_Thing_BE
           POSTGRES_DB: One_Small_Thing_BE
-          POSTGRES_PASSWORD: 
+          POSTGRES_PASSWORD: ""
     # environment variables specific to Ruby/Rails, applied to the primary container.
     environment:
       BUNDLE_JOBS: "3"
       BUNDLE_RETRY: "3"
       PGHOST: 127.0.0.1
       PGUSER: One_Small_Thing_BE
-      PGPASSWORD: 
+      PGPASSWORD: ""
       RAILS_ENV: test
 
     steps:
@@ -51,6 +51,9 @@ jobs:
       - run:
           name: Wait for DB
           command: dockerize -wait tcp://localhost:5432 -timeout 1m
+      - run:
+          name: Database setup
+          command: bundle exec rails db:create db:schema:load --trace
       - ruby/rspec-test
       - store_test_results:
           path: test-results
