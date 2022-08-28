@@ -29,7 +29,7 @@ jobs:
           password: $DOCKERHUB_PASSWORD
         environment: # add POSTGRES environment variables.
           POSTGRES_USER: one-small-thing-BE
-          POSTGRES_DB: rails_blog_test
+          POSTGRES_DB: one-small-thing-BE
           POSTGRES_PASSWORD: ""
     # environment variables specific to Ruby/Rails, applied to the primary container.
     environment:
@@ -51,10 +51,10 @@ jobs:
       - run:
           name: Wait for DB
           command: dockerize -wait tcp://localhost:5432 -timeout 1m
-      # - run:
-          # name: Database setup
-          # command: rails db:create db:schema:load --trace
-      - run: bundle exec rails db:create db:scema:load --trace
+      - run:
+          name: Database setup
+          command: rails db:create db:schema:load --trace
+      # - run: bundle exec rails db:create db:scema:load --trace
       - ruby/rspec-test
 # We use workflows to orchestrate the jobs that we declared above.
 workflows:
