@@ -35,4 +35,4 @@
 /coverage/
 
 # Ignore fixtures
-/spec/fixtures/
+/spec/fixtures/vcr_cassettes
