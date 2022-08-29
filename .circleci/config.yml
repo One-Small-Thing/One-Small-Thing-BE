@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  ruby: circleci/ruby@1.0
+  ruby: circleci/ruby@1.8.0
 
 # Define the jobs we want to run for this project
 jobs:
@@ -28,15 +28,15 @@ jobs:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD
         environment: # add POSTGRES environment variables.
-          POSTGRES_USER: one-small-thing-BE
-          POSTGRES_DB: rails_blog_test
+          POSTGRES_USER: One_Small_Thing_BE
+          POSTGRES_DB: One_Small_Thing_BE
           POSTGRES_PASSWORD: ""
     # environment variables specific to Ruby/Rails, applied to the primary container.
     environment:
       BUNDLE_JOBS: "3"
       BUNDLE_RETRY: "3"
       PGHOST: 127.0.0.1
-      PGUSER: one-small-thing-BE
+      PGUSER: One_Small_Thing_BE
       PGPASSWORD: ""
       RAILS_ENV: test
 
@@ -53,8 +53,10 @@ jobs:
           command: dockerize -wait tcp://localhost:5432 -timeout 1m
       - run:
           name: Database setup
-          command: bundle exec rails db:create db:schema:load --trace
+          command: bundle exec rake db:create db:schema:load --trace
       - ruby/rspec-test
+      - store_test_results:
+          path: test-results
 # We use workflows to orchestrate the jobs that we declared above.
 workflows:
   version: 2
