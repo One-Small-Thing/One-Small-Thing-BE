@@ -15,7 +15,13 @@ module Types
       User.find(id.to_i)
     end
 
-    field :topics, Types::TopicType, null: false
+    field :users, [UserType], null: true
+
+    def users
+      User.all
+    end
+
+    field :topics, [TopicType], null: false
 
     def topics
       Topic.all

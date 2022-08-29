@@ -1,0 +1,277 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?categories=chinese&latitude=39.6937&longitude=-105.0152
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Authorization
+      User-Agent:
+      - Faraday v2.5.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--uswest2-77d4785ff7-ldsxn; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      X-Zipkin-Id:
+      - fd638b43859e7b56
+      Ratelimit-Remaining:
+      - '4977'
+      Ratelimit-Resettime:
+      - '2022-08-11T00:00:00+00:00'
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '5000'
+      X-Cloudmap:
+      - routing_uswest2
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-69-69-73-uswest2aprod
+      X-Extlb:
+      - 10-69-69-73-uswest2aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 10 Aug 2022 17:37:50 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8230-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "fXA9hf0IfVRtvSEc9mxnPw", "alias": "star-kitchen-denver",
+        "name": "Star Kitchen", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/4dkpPrRVdJXCUFl4GdCbZQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/star-kitchen-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 1097, "categories": [{"alias": "dimsum", "title": "Dim Sum"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "cantonese", "title":
+        "Cantonese"}], "rating": 4.0, "coordinates": {"latitude": 39.697298, "longitude":
+        -105.024301}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
+        {"address1": "2917 W Mississippi Ave", "address2": "Ste 5", "address3": "",
+        "city": "Denver", "zip_code": "80219", "country": "US", "state": "CO", "display_address":
+        ["2917 W Mississippi Ave", "Ste 5", "Denver, CO 80219"]}, "phone": "+13039360089",
+        "display_phone": "(303) 936-0089", "distance": 875.4377511407145}, {"id":
+        "WNuT_lfBJu_uJIG-AOvNmw", "alias": "hong-kong-barbecue-denver", "name": "Hong
+        Kong Barbecue", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/oUOMqPlF0QeOwyIDXsNh6w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/hong-kong-barbecue-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 219, "categories": [{"alias": "bbq", "title": "Barbeque"},
+        {"alias": "cantonese", "title": "Cantonese"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.69767, "longitude": -105.02469}, "transactions": ["delivery"],
+        "price": "$", "location": {"address1": "1048 S Federal Blvd", "address2":
+        "", "address3": "", "city": "Denver", "zip_code": "80219", "country": "US",
+        "state": "CO", "display_address": ["1048 S Federal Blvd", "Denver, CO 80219"]},
+        "phone": "+13039379088", "display_phone": "(303) 937-9088", "distance": 922.1347364911156},
+        {"id": "8My16MeQh2dAEOGT9hwDJA", "alias": "lao-wang-noodle-house-denver",
+        "name": "Lao Wang Noodle House", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/ksmdfIyEAjwTRP2XL_T_xg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/lao-wang-noodle-house-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 602, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "taiwanese", "title": "Taiwanese"}, {"alias": "noodles", "title":
+        "Noodles"}], "rating": 3.5, "coordinates": {"latitude": 39.69951, "longitude":
+        -105.02546}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "945 S Federal Blvd", "address2": "Ste D", "address3": "", "city": "Denver",
+        "zip_code": "80219", "country": "US", "state": "CO", "display_address": ["945
+        S Federal Blvd", "Ste D", "Denver, CO 80219"]}, "phone": "+13039752497", "display_phone":
+        "(303) 975-2497", "distance": 1097.3310722246656}, {"id": "NrB3AJjRrUvm7pzvtPNaNQ",
+        "alias": "vinh-xuong-bakery-denver", "name": "Vinh Xuong Bakery", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/zPOZlxJz-C1sk6IM1WMgLA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/vinh-xuong-bakery-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 120, "categories": [{"alias": "bakeries", "title": "Bakeries"},
+        {"alias": "vietnamese", "title": "Vietnamese"}, {"alias": "chinese", "title":
+        "Chinese"}], "rating": 4.5, "coordinates": {"latitude": 39.70984, "longitude":
+        -105.02533}, "transactions": ["delivery"], "price": "$", "location": {"address1":
+        "375 S Federal Blvd", "address2": "Unit 112", "address3": "", "city": "Denver",
+        "zip_code": "80219", "country": "US", "state": "CO", "display_address": ["375
+        S Federal Blvd", "Unit 112", "Denver, CO 80219"]}, "phone": "+13039224968",
+        "display_phone": "(303) 922-4968", "distance": 2006.8067074446228}, {"id":
+        "DUk54oQfCdEXmMQXTb3XCQ", "alias": "super-star-asian-cuisine-denver-2", "name":
+        "Super Star Asian Cuisine", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ik_8sezbZllA6U69ucin9Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/super-star-asian-cuisine-denver-2?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 519, "categories": [{"alias": "dimsum", "title": "Dim Sum"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "cantonese", "title":
+        "Cantonese"}], "rating": 3.5, "coordinates": {"latitude": 39.7101165532071,
+        "longitude": -105.013625072878}, "transactions": ["pickup", "delivery"], "price":
+        "$$", "location": {"address1": "2200 W Alameda Ave", "address2": "Ste 34",
+        "address3": "", "city": "Denver", "zip_code": "80223", "country": "US", "state":
+        "CO", "display_address": ["2200 W Alameda Ave", "Ste 34", "Denver, CO 80223"]},
+        "phone": "+13037279889", "display_phone": "(303) 727-9889", "distance": 1830.401133532736},
+        {"id": "q4tugAP9-ahYjdkbs9gbvg", "alias": "szechuan-tasty-house-denver-3",
+        "name": "Szechuan Tasty House", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/_zuB1d7i0dJomhCLAdj4Ag/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/szechuan-tasty-house-denver-3?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 156, "categories": [{"alias": "szechuan", "title": "Szechuan"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.6781986905155, "longitude":
+        -104.999813333333}, "transactions": ["pickup", "delivery"], "price": "$$",
+        "location": {"address1": "1000 W Evans Ave", "address2": "", "address3": null,
+        "city": "Denver", "zip_code": "80223", "country": "US", "state": "CO", "display_address":
+        ["1000 W Evans Ave", "Denver, CO 80223"]}, "phone": "+13039550069", "display_phone":
+        "(303) 955-0069", "distance": 2169.004520652143}, {"id": "rfe8zu6jfeGie2vMI6OaIg",
+        "alias": "the-empress-seafood-restaurant-denver", "name": "The Empress Seafood
+        Restaurant", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/GCIKfAG8mb9Xj6ZKuQoW7Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-empress-seafood-restaurant-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 273, "categories": [{"alias": "dimsum", "title": "Dim Sum"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "cantonese", "title":
+        "Cantonese"}], "rating": 3.5, "coordinates": {"latitude": 39.7114679004515,
+        "longitude": -105.023370116568}, "transactions": ["pickup", "delivery"], "price":
+        "$$", "location": {"address1": "2825 W Alameda Ave", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80219", "country": "US", "state": "CO",
+        "display_address": ["2825 W Alameda Ave", "Denver, CO 80219"]}, "phone": "+13039222822",
+        "display_phone": "(303) 922-2822", "distance": 2095.690730041887}, {"id":
+        "6kRbrLNIZKZ1fcjgsTFobg", "alias": "fortune-wok-to-table-denver", "name":
+        "Fortune Wok to Table", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/aVmP8cWwrCsLWWjwx8wvjg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/fortune-wok-to-table-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 370, "categories": [{"alias": "noodles", "title": "Noodles"},
+        {"alias": "dimsum", "title": "Dim Sum"}, {"alias": "shanghainese", "title":
+        "Shanghainese"}], "rating": 4.5, "coordinates": {"latitude": 39.72124, "longitude":
+        -104.9543}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "2817 E 3rd Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80206", "country": "US", "state": "CO", "display_address": ["2817 E 3rd Ave",
+        "Denver, CO 80206"]}, "phone": "+13033217788", "display_phone": "(303) 321-7788",
+        "distance": 6042.873623623798}, {"id": "xM1l4yCBHxBE6J76lNngtA", "alias":
+        "pepper-asian-bistro-denver", "name": "Pepper Asian Bistro", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/XPeL07Tx-rT_f51J-fuN-w/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/pepper-asian-bistro-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 699, "categories": [{"alias": "asianfusion", "title": "Asian
+        Fusion"}, {"alias": "chinese", "title": "Chinese"}, {"alias": "thai", "title":
+        "Thai"}], "rating": 4.0, "coordinates": {"latitude": 39.7403705, "longitude":
+        -104.9539956}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
+        {"address1": "2831 E Colfax Ave", "address2": "", "address3": "", "city":
+        "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address":
+        ["2831 E Colfax Ave", "Denver, CO 80206"]}, "phone": "+13033888377", "display_phone":
+        "(303) 388-8377", "distance": 7371.274934594199}, {"id": "9t2n3LNT9jeMpocJgcYYAA",
+        "alias": "karma-asian-denver", "name": "Karma Asian", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/eGuwCGdb9pj5vHNx-xXoJQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/karma-asian-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 449, "categories": [{"alias": "asianfusion", "title": "Asian
+        Fusion"}, {"alias": "thai", "title": "Thai"}, {"alias": "chinese", "title":
+        "Chinese"}], "rating": 4.0, "coordinates": {"latitude": 39.7161, "longitude":
+        -104.9871299}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
+        {"address1": "22 S Broadway", "address2": "", "address3": "", "city": "Denver",
+        "zip_code": "80209", "country": "US", "state": "CO", "display_address": ["22
+        S Broadway", "Denver, CO 80209"]}, "phone": "+13038710167", "display_phone":
+        "(303) 871-0167", "distance": 3459.5089389287987}, {"id": "VOhBjGoL12ss4f0pxBfoVA",
+        "alias": "pepper-asian-bistro-ii-denver", "name": "Pepper Asian Bistro II",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/KZzxO_9sbWFj3C8hmhIWAg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pepper-asian-bistro-ii-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 426, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "asianfusion", "title": "Asian Fusion"}, {"alias": "thai", "title":
+        "Thai"}], "rating": 4.5, "coordinates": {"latitude": 39.769119, "longitude":
+        -105.00202}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
+        {"address1": "3759 Lipan St", "address2": null, "address3": null, "city":
+        "Denver", "zip_code": "80211", "country": "US", "state": "CO", "display_address":
+        ["3759 Lipan St", "Denver, CO 80211"]}, "phone": "+17205247818", "display_phone":
+        "(720) 524-7818", "distance": 8459.936028748245}, {"id": "uYiPrWmdPr0E_eeMRKl3fQ",
+        "alias": "happy-cafe-denver", "name": "Happy Cafe", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Yy6yc7uuJplLlpmHAwBz3A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/happy-cafe-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 53, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.69951, "longitude": -105.02546},
+        "transactions": ["pickup", "delivery"], "location": {"address1": "945 S Federal
+        Blvd", "address2": null, "address3": null, "city": "Denver", "zip_code": "80219",
+        "country": "US", "state": "CO", "display_address": ["945 S Federal Blvd",
+        "Denver, CO 80219"]}, "phone": "+13039222226", "display_phone": "(303) 922-2226",
+        "distance": 1098.149219682353}, {"id": "Z8b6mYueYNTtV4Ku0R6ZUQ", "alias":
+        "new-china-cafe-denver", "name": "New China Cafe", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/vA2vwOuKJSpj0330tZGq4Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/new-china-cafe-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 259, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "breakfast_brunch", "title":
+        "Breakfast & Brunch"}], "rating": 4.0, "coordinates": {"latitude": 39.7114478755004,
+        "longitude": -104.9800956}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "609 E Alameda Ave", "address2": "", "address3": "", "city":
+        "Denver", "zip_code": "80209", "country": "US", "state": "CO", "display_address":
+        ["609 E Alameda Ave", "Denver, CO 80209"]}, "phone": "+13037332833", "display_phone":
+        "(303) 733-2833", "distance": 3593.563255656263}, {"id": "kfTdkvBUiAqqzISm_cq23A",
+        "alias": "hop-alley-denver", "name": "Hop Alley", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/zkRjU2rLUQ5uKqkhGbBUEw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/hop-alley-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 457, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "asianfusion", "title": "Asian Fusion"}, {"alias": "bars", "title":
+        "Bars"}], "rating": 4.0, "coordinates": {"latitude": 39.76702, "longitude":
+        -104.97418}, "transactions": ["delivery"], "price": "$$$", "location": {"address1":
+        "3500 Larimer St", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80205", "country": "US", "state": "CO", "display_address": ["3500 Larimer
+        St", "Denver, CO 80205"]}, "phone": "+17203798340", "display_phone": "(720)
+        379-8340", "distance": 8870.872570498432}, {"id": "WCdhbK0vloELM2G9FVesxw",
+        "alias": "little-dragon-denver", "name": "Little Dragon", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/voV5N9vZPcoTRiFIu7pPKw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/little-dragon-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 447, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "noodles", "title": "Noodles"}], "rating": 4.0, "coordinates": {"latitude":
+        39.7369479324908, "longitude": -104.916499257087}, "transactions": ["pickup",
+        "delivery"], "price": "$$", "location": {"address1": "1305 Krameria St", "address2":
+        "Ste G", "address3": "", "city": "Denver", "zip_code": "80220", "country":
+        "US", "state": "CO", "display_address": ["1305 Krameria St", "Ste G", "Denver,
+        CO 80220"]}, "phone": "+13033222128", "display_phone": "(303) 322-2128", "distance":
+        9715.87551189828}, {"id": "yU4hxI-p6LWahcOmquLnAw", "alias": "the-bronze-empire-denver-2",
+        "name": "The Bronze Empire", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/szXuq4fziSkKClZ_6--Nyw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-bronze-empire-denver-2?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 320, "categories": [{"alias": "hotpot", "title": "Hot Pot"},
+        {"alias": "szechuan", "title": "Szechuan"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.6878065497914, "longitude": -104.942380522754}, "transactions":
+        ["pickup", "delivery"], "price": "$$", "location": {"address1": "1591 S Colorado
+        Blvd", "address2": "", "address3": null, "city": "Denver", "zip_code": "80222",
+        "country": "US", "state": "CO", "display_address": ["1591 S Colorado Blvd",
+        "Denver, CO 80222"]}, "phone": "+17205998888", "display_phone": "(720) 599-8888",
+        "distance": 6265.142976615205}, {"id": "l0GP-bNK2mJBbSw6FAUkEQ", "alias":
+        "spicy-basil-denver", "name": "Spicy Basil", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/fkPkZhAEdQnypaMu17y4JA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/spicy-basil-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 482, "categories": [{"alias": "thai", "title": "Thai"}, {"alias":
+        "chinese", "title": "Chinese"}, {"alias": "asianfusion", "title": "Asian Fusion"}],
+        "rating": 3.5, "coordinates": {"latitude": 39.7169456892852, "longitude":
+        -104.987726380069}, "transactions": ["pickup", "delivery"], "price": "$",
+        "location": {"address1": "1 Broadway", "address2": "", "address3": "", "city":
+        "Denver", "zip_code": "80203", "country": "US", "state": "CO", "display_address":
+        ["1 Broadway", "Denver, CO 80203"]}, "phone": "+13038718828", "display_phone":
+        "(303) 871-8828", "distance": 3493.5634806049984}, {"id": "yUXr2d9pomzJgmbPl8tlZQ",
+        "alias": "q-house-denver", "name": "Q House", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/j6qTLzzfT31F92HxwrH0ww/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/q-house-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 226, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.7403344229824, "longitude":
+        -104.947235575533}, "transactions": ["pickup", "delivery"], "price": "$$",
+        "location": {"address1": "3421 E Colfax Ave", "address2": "", "address3":
+        null, "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO",
+        "display_address": ["3421 E Colfax Ave", "Denver, CO 80206"]}, "phone": "+17207298887",
+        "display_phone": "(720) 729-8887", "distance": 7789.870462062904}, {"id":
+        "Sk89ZllCbWVqA4M_MoJ7Lg", "alias": "noodles-express-denver", "name": "Noodles
+        Express", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/dgayoTjtDbOqndnV-PRszg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/noodles-express-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 101, "categories": [{"alias": "noodles", "title": "Noodles"},
+        {"alias": "szechuan", "title": "Szechuan"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.70269, "longitude": -104.94143}, "transactions": ["pickup",
+        "delivery"], "price": "$$", "location": {"address1": "703 S Colorado Blvd",
+        "address2": "", "address3": null, "city": "Denver", "zip_code": "80246", "country":
+        "US", "state": "CO", "display_address": ["703 S Colorado Blvd", "Denver, CO
+        80246"]}, "phone": "+13037368818", "display_phone": "(303) 736-8818", "distance":
+        6402.837800744708}, {"id": "AMU4bsCTc6HAa0GAbC4M6Q", "alias": "zoe-ma-ma-denver-2",
+        "name": "Zoe Ma Ma", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/W15Uqya7PNfENroSDxKxRw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/zoe-ma-ma-denver-2?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 539, "categories": [{"alias": "dimsum", "title": "Dim Sum"},
+        {"alias": "taiwanese", "title": "Taiwanese"}], "rating": 3.5, "coordinates":
+        {"latitude": 39.7521648, "longitude": -105.0007797}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "1625 Wynkoop St", "address2": "",
+        "address3": "", "city": "Denver", "zip_code": "80202", "country": "US", "state":
+        "CO", "display_address": ["1625 Wynkoop St", "Denver, CO 80202"]}, "phone":
+        "+13035456262", "display_phone": "(303) 545-6262", "distance": 6644.582614556253}],
+        "total": 93, "region": {"center": {"longitude": -105.0152, "latitude": 39.6937}}}'
+  recorded_at: Wed, 10 Aug 2022 17:37:50 GMT
+recorded_with: VCR 6.1.0
