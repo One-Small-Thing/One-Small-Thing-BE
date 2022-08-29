@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 bob = User.create!(name: "Bob Smith", email: "bob@email.com")
+sally = User.create!(name: "Sally Sitwell", email: "Sally@email.com")
 
 gun_violence = Topic.create!( name: 'Gun Violence')
 environmental = Topic.create!( name: 'Environmental')
@@ -17,3 +18,5 @@ computing = Topic.create!( name: 'Free and Open Computing')
 
 user_topic1 = UserTopic.create!( user_id: bob.id, topic_id: gun_violence.id)
 user_topic2 = UserTopic.create!( user_id: bob.id, topic_id: lgbtq.id)
+user_topic3 = UserTopic.create!( user_id: sally.id, topic_id: education.id)
+user_topic4 = UserTopic.create!( user_id: sally.id, topic_id: domestic_violence.id)
