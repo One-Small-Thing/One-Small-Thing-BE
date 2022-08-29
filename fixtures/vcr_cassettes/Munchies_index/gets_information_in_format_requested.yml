@@ -1,0 +1,447 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=key&location=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 10 Aug 2022 17:37:52 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1734'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Wed, 10 Aug 2022 17:37:52 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=47A48FD42E268E0F60DEB8BD20375E24; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"denver,co"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=key&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1963709172"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=key&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=-860343405"}]}]}'
+  recorded_at: Wed, 10 Aug 2022 17:37:52 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/onecall?appid=appid&lat=39.738453&lon=-104.984853&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 10 Aug 2022 17:37:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '21597'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/onecall?lat=39.74&lon=-104.98&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"lat":39.7392,"lon":-104.9847,"timezone":"America/Denver","timezone_offset":-21600,"current":{"dt":1660153047,"sunrise":1660133246,"sunset":1660183395,"temp":87.3,"feels_like":85.01,"pressure":1020,"humidity":30,"dew_point":52.11,"uvi":9.57,"clouds":0,"visibility":10000,"wind_speed":5.99,"wind_deg":142,"wind_gust":13,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}]},"minutely":[{"dt":1660153080,"precipitation":0},{"dt":1660153140,"precipitation":0},{"dt":1660153200,"precipitation":0},{"dt":1660153260,"precipitation":0},{"dt":1660153320,"precipitation":0},{"dt":1660153380,"precipitation":0},{"dt":1660153440,"precipitation":0},{"dt":1660153500,"precipitation":0},{"dt":1660153560,"precipitation":0},{"dt":1660153620,"precipitation":0},{"dt":1660153680,"precipitation":0},{"dt":1660153740,"precipitation":0},{"dt":1660153800,"precipitation":0},{"dt":1660153860,"precipitation":0},{"dt":1660153920,"precipitation":0},{"dt":1660153980,"precipitation":0},{"dt":1660154040,"precipitation":0},{"dt":1660154100,"precipitation":0},{"dt":1660154160,"precipitation":0},{"dt":1660154220,"precipitation":0},{"dt":1660154280,"precipitation":0},{"dt":1660154340,"precipitation":0},{"dt":1660154400,"precipitation":0},{"dt":1660154460,"precipitation":0},{"dt":1660154520,"precipitation":0},{"dt":1660154580,"precipitation":0},{"dt":1660154640,"precipitation":0},{"dt":1660154700,"precipitation":0},{"dt":1660154760,"precipitation":0},{"dt":1660154820,"precipitation":0},{"dt":1660154880,"precipitation":0},{"dt":1660154940,"precipitation":0},{"dt":1660155000,"precipitation":0},{"dt":1660155060,"precipitation":0},{"dt":1660155120,"precipitation":0},{"dt":1660155180,"precipitation":0},{"dt":1660155240,"precipitation":0},{"dt":1660155300,"precipitation":0},{"dt":1660155360,"precipitation":0},{"dt":1660155420,"precipitation":0},{"dt":1660155480,"precipitation":0},{"dt":1660155540,"precipitation":0},{"dt":1660155600,"precipitation":0},{"dt":1660155660,"precipitation":0},{"dt":1660155720,"precipitation":0},{"dt":1660155780,"precipitation":0},{"dt":1660155840,"precipitation":0},{"dt":1660155900,"precipitation":0},{"dt":1660155960,"precipitation":0},{"dt":1660156020,"precipitation":0},{"dt":1660156080,"precipitation":0},{"dt":1660156140,"precipitation":0},{"dt":1660156200,"precipitation":0},{"dt":1660156260,"precipitation":0},{"dt":1660156320,"precipitation":0},{"dt":1660156380,"precipitation":0},{"dt":1660156440,"precipitation":0},{"dt":1660156500,"precipitation":0},{"dt":1660156560,"precipitation":0},{"dt":1660156620,"precipitation":0},{"dt":1660156680,"precipitation":0}],"hourly":[{"dt":1660150800,"temp":87.31,"feels_like":84.6,"pressure":1020,"humidity":27,"dew_point":49.28,"uvi":7.66,"clouds":0,"visibility":10000,"wind_speed":6.13,"wind_deg":136,"wind_gust":6.2,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660154400,"temp":87.3,"feels_like":85.01,"pressure":1020,"humidity":30,"dew_point":52.11,"uvi":9.57,"clouds":0,"visibility":10000,"wind_speed":6.2,"wind_deg":115,"wind_gust":6.64,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660158000,"temp":88.16,"feels_like":85.28,"pressure":1019,"humidity":26,"dew_point":48.99,"uvi":10.35,"clouds":0,"visibility":10000,"wind_speed":6.04,"wind_deg":108,"wind_gust":6.24,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660161600,"temp":89.67,"feels_like":86.23,"pressure":1018,"humidity":22,"dew_point":45.81,"uvi":9.62,"clouds":0,"visibility":10000,"wind_speed":5.35,"wind_deg":105,"wind_gust":5.37,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660165200,"temp":91.24,"feels_like":87.42,"pressure":1016,"humidity":19,"dew_point":43.25,"uvi":7.71,"clouds":0,"visibility":10000,"wind_speed":6.73,"wind_deg":121,"wind_gust":7.05,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660168800,"temp":92.59,"feels_like":88.63,"pressure":1014,"humidity":18,"dew_point":42.94,"uvi":5.17,"clouds":0,"visibility":10000,"wind_speed":12.66,"wind_deg":144,"wind_gust":9.22,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660172400,"temp":92.05,"feels_like":88.09,"pressure":1013,"humidity":18,"dew_point":42.53,"uvi":2.8,"clouds":0,"visibility":10000,"wind_speed":15.57,"wind_deg":149,"wind_gust":10.18,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660176000,"temp":90.48,"feels_like":86.68,"pressure":1013,"humidity":19,"dew_point":42.66,"uvi":1.09,"clouds":0,"visibility":10000,"wind_speed":14.99,"wind_deg":149,"wind_gust":9.53,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660179600,"temp":88.41,"feels_like":84.96,"pressure":1013,"humidity":21,"dew_point":43.14,"uvi":0.26,"clouds":0,"visibility":10000,"wind_speed":14.58,"wind_deg":148,"wind_gust":13.42,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660183200,"temp":85.46,"feels_like":82.65,"pressure":1014,"humidity":24,"dew_point":44.98,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":13.89,"wind_deg":149,"wind_gust":17.6,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660186800,"temp":83.57,"feels_like":81.32,"pressure":1015,"humidity":26,"dew_point":45.41,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":10.87,"wind_deg":164,"wind_gust":19.91,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1660190400,"temp":81.03,"feels_like":79.75,"pressure":1015,"humidity":29,"dew_point":45.77,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":10.83,"wind_deg":161,"wind_gust":22.41,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1660194000,"temp":79.38,"feels_like":79.38,"pressure":1016,"humidity":31,"dew_point":45.84,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":11.16,"wind_deg":165,"wind_gust":20.65,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1660197600,"temp":78.21,"feels_like":77.23,"pressure":1016,"humidity":32,"dew_point":45.75,"uvi":0,"clouds":1,"visibility":10000,"wind_speed":10.22,"wind_deg":170,"wind_gust":21.54,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1660201200,"temp":76.73,"feels_like":75.7,"pressure":1016,"humidity":34,"dew_point":45.93,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":7.65,"wind_deg":189,"wind_gust":12.91,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1660204800,"temp":75.96,"feels_like":74.89,"pressure":1016,"humidity":35,"dew_point":46.09,"uvi":0,"clouds":3,"visibility":10000,"wind_speed":6.33,"wind_deg":197,"wind_gust":9.8,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1660208400,"temp":75.15,"feels_like":74.05,"pressure":1016,"humidity":36,"dew_point":45.97,"uvi":0,"clouds":2,"visibility":10000,"wind_speed":5.01,"wind_deg":198,"wind_gust":8.37,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1660212000,"temp":74.41,"feels_like":73.24,"pressure":1016,"humidity":36,"dew_point":45.63,"uvi":0,"clouds":1,"visibility":10000,"wind_speed":2.75,"wind_deg":213,"wind_gust":4.54,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1660215600,"temp":73.81,"feels_like":72.59,"pressure":1016,"humidity":36,"dew_point":45.46,"uvi":0,"clouds":1,"visibility":10000,"wind_speed":1.83,"wind_deg":230,"wind_gust":3.18,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1660219200,"temp":73.08,"feels_like":71.82,"pressure":1017,"humidity":37,"dew_point":45.12,"uvi":0,"clouds":1,"visibility":10000,"wind_speed":2.15,"wind_deg":199,"wind_gust":2.62,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1660222800,"temp":73.49,"feels_like":72.23,"pressure":1017,"humidity":36,"dew_point":45.07,"uvi":0.26,"clouds":0,"visibility":10000,"wind_speed":2.19,"wind_deg":194,"wind_gust":2.64,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660226400,"temp":76.23,"feels_like":75.09,"pressure":1017,"humidity":33,"dew_point":44.91,"uvi":1.09,"clouds":0,"visibility":10000,"wind_speed":1.43,"wind_deg":180,"wind_gust":2.15,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660230000,"temp":79.63,"feels_like":79.63,"pressure":1017,"humidity":29,"dew_point":44.65,"uvi":2.78,"clouds":0,"visibility":10000,"wind_speed":1.34,"wind_deg":131,"wind_gust":1.32,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660233600,"temp":82.96,"feels_like":80.87,"pressure":1016,"humidity":26,"dew_point":44.35,"uvi":5.16,"clouds":0,"visibility":10000,"wind_speed":3.15,"wind_deg":142,"wind_gust":3.27,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660237200,"temp":86.92,"feels_like":83.73,"pressure":1015,"humidity":22,"dew_point":43.83,"uvi":7.67,"clouds":0,"visibility":10000,"wind_speed":2.75,"wind_deg":124,"wind_gust":2.84,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660240800,"temp":89.96,"feels_like":86.31,"pressure":1014,"humidity":20,"dew_point":43.47,"uvi":9.58,"clouds":0,"visibility":10000,"wind_speed":3.18,"wind_deg":90,"wind_gust":3.47,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660244400,"temp":92.41,"feels_like":88.45,"pressure":1013,"humidity":18,"dew_point":43.14,"uvi":10.33,"clouds":0,"visibility":10000,"wind_speed":3.94,"wind_deg":77,"wind_gust":4.45,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660248000,"temp":94.33,"feels_like":90.25,"pressure":1012,"humidity":17,"dew_point":42.75,"uvi":9.6,"clouds":0,"visibility":10000,"wind_speed":4.61,"wind_deg":95,"wind_gust":5.46,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660251600,"temp":95.59,"feels_like":91.38,"pressure":1010,"humidity":16,"dew_point":42.04,"uvi":7.69,"clouds":0,"visibility":10000,"wind_speed":7.07,"wind_deg":110,"wind_gust":9.15,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660255200,"temp":95.9,"feels_like":91.53,"pressure":1009,"humidity":15,"dew_point":41.58,"uvi":5.2,"clouds":0,"visibility":10000,"wind_speed":11.1,"wind_deg":122,"wind_gust":10.58,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660258800,"temp":95,"feels_like":90.77,"pressure":1009,"humidity":16,"dew_point":42.58,"uvi":2.8,"clouds":0,"visibility":10000,"wind_speed":13.62,"wind_deg":134,"wind_gust":10.63,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660262400,"temp":93.02,"feels_like":89.06,"pressure":1009,"humidity":18,"dew_point":42.82,"uvi":1.08,"clouds":0,"visibility":10000,"wind_speed":14.83,"wind_deg":140,"wind_gust":8.68,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660266000,"temp":90.55,"feels_like":86.86,"pressure":1010,"humidity":20,"dew_point":43.34,"uvi":0.25,"clouds":0,"visibility":10000,"wind_speed":15.32,"wind_deg":147,"wind_gust":13.89,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660269600,"temp":87.13,"feels_like":84,"pressure":1011,"humidity":23,"dew_point":44.51,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":15.37,"wind_deg":153,"wind_gust":19.42,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660273200,"temp":85.05,"feels_like":82.4,"pressure":1012,"humidity":25,"dew_point":45.18,"uvi":0,"clouds":32,"visibility":10000,"wind_speed":13.02,"wind_deg":163,"wind_gust":22.64,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03n"}],"pop":0},{"dt":1660276800,"temp":82.63,"feels_like":80.71,"pressure":1013,"humidity":27,"dew_point":45.09,"uvi":0,"clouds":49,"visibility":10000,"wind_speed":10.36,"wind_deg":173,"wind_gust":25.34,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03n"}],"pop":0},{"dt":1660280400,"temp":80.74,"feels_like":79.5,"pressure":1014,"humidity":28,"dew_point":44.98,"uvi":0,"clouds":46,"visibility":10000,"wind_speed":9.62,"wind_deg":178,"wind_gust":22.21,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03n"}],"pop":0},{"dt":1660284000,"temp":79.68,"feels_like":79.68,"pressure":1014,"humidity":31,"dew_point":46.33,"uvi":0,"clouds":54,"visibility":10000,"wind_speed":6.71,"wind_deg":216,"wind_gust":11.36,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0},{"dt":1660287600,"temp":78.69,"feels_like":77.81,"pressure":1014,"humidity":33,"dew_point":47.21,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":4.27,"wind_deg":229,"wind_gust":6.62,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0},{"dt":1660291200,"temp":77.88,"feels_like":76.96,"pressure":1014,"humidity":34,"dew_point":47.21,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":3.6,"wind_deg":219,"wind_gust":5.32,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0},{"dt":1660294800,"temp":76.89,"feels_like":75.92,"pressure":1014,"humidity":35,"dew_point":47.03,"uvi":0,"clouds":99,"visibility":10000,"wind_speed":1.83,"wind_deg":223,"wind_gust":3.6,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0},{"dt":1660298400,"temp":76.05,"feels_like":75.04,"pressure":1015,"humidity":36,"dew_point":46.72,"uvi":0,"clouds":78,"visibility":10000,"wind_speed":2.15,"wind_deg":352,"wind_gust":5.12,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0},{"dt":1660302000,"temp":75.13,"feels_like":74.03,"pressure":1015,"humidity":36,"dew_point":46.29,"uvi":0,"clouds":63,"visibility":10000,"wind_speed":2.8,"wind_deg":353,"wind_gust":5.28,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0},{"dt":1660305600,"temp":74.59,"feels_like":73.49,"pressure":1015,"humidity":37,"dew_point":46.15,"uvi":0,"clouds":53,"visibility":10000,"wind_speed":1.01,"wind_deg":335,"wind_gust":3.24,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0},{"dt":1660309200,"temp":75.18,"feels_like":74.08,"pressure":1016,"humidity":36,"dew_point":46.15,"uvi":0.23,"clouds":0,"visibility":10000,"wind_speed":1.03,"wind_deg":254,"wind_gust":2.84,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660312800,"temp":77.59,"feels_like":76.6,"pressure":1016,"humidity":33,"dew_point":46.31,"uvi":1,"clouds":0,"visibility":10000,"wind_speed":2.04,"wind_deg":231,"wind_gust":3.56,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660316400,"temp":80.8,"feels_like":79.68,"pressure":1016,"humidity":30,"dew_point":46.78,"uvi":2.54,"clouds":0,"visibility":10000,"wind_speed":0.87,"wind_deg":352,"wind_gust":6.06,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660320000,"temp":83.59,"feels_like":81.5,"pressure":1015,"humidity":28,"dew_point":46.8,"uvi":4.95,"clouds":0,"visibility":10000,"wind_speed":4.18,"wind_deg":8,"wind_gust":7.52,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0}],"daily":[{"dt":1660158000,"sunrise":1660133246,"sunset":1660183395,"moonrise":1660182060,"moonset":1660125480,"moon_phase":0.45,"temp":{"day":88.16,"min":71.74,"max":92.59,"night":79.38,"eve":88.41,"morn":72.5},"feels_like":{"day":85.28,"night":79.38,"eve":84.96,"morn":71.51},"pressure":1019,"humidity":26,"dew_point":48.99,"wind_speed":15.57,"wind_deg":149,"wind_gust":24.58,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":0,"pop":0,"uvi":10.35},{"dt":1660244400,"sunrise":1660219703,"sunset":1660269721,"moonrise":1660270980,"moonset":1660216620,"moon_phase":0.5,"temp":{"day":92.41,"min":73.08,"max":95.9,"night":80.74,"eve":90.55,"morn":73.49},"feels_like":{"day":88.45,"night":79.5,"eve":86.86,"morn":72.23},"pressure":1013,"humidity":18,"dew_point":43.14,"wind_speed":15.37,"wind_deg":153,"wind_gust":25.34,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":0,"pop":0,"uvi":10.33},{"dt":1660330800,"sunrise":1660306160,"sunset":1660356045,"moonrise":1660359420,"moonset":1660307700,"moon_phase":0.53,"temp":{"day":92.34,"min":74.59,"max":94.86,"night":83.52,"eve":92.7,"morn":75.18},"feels_like":{"day":88.79,"night":81.36,"eve":88.61,"morn":74.08},"pressure":1013,"humidity":21,"dew_point":46.53,"wind_speed":8.5,"wind_deg":77,"wind_gust":11.36,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":0,"pop":0.04,"uvi":9.91},{"dt":1660417200,"sunrise":1660392617,"sunset":1660442368,"moonrise":1660447620,"moonset":1660398720,"moon_phase":0.56,"temp":{"day":89.51,"min":75.96,"max":95.2,"night":84.13,"eve":95,"morn":75.96},"feels_like":{"day":86.09,"night":81.75,"eve":90.52,"morn":74.95},"pressure":1013,"humidity":22,"dew_point":45.68,"wind_speed":12.64,"wind_deg":30,"wind_gust":19.82,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":0,"pop":0.07,"uvi":9.9},{"dt":1660503600,"sunrise":1660479075,"sunset":1660528690,"moonrise":1660535520,"moonset":1660489500,"moon_phase":0.6,"temp":{"day":90.1,"min":74.73,"max":95.94,"night":78.01,"eve":95.14,"morn":74.73},"feels_like":{"day":86.67,"night":77.2,"eve":90.66,"morn":73.78},"pressure":1009,"humidity":22,"dew_point":46.33,"wind_speed":16.87,"wind_deg":354,"wind_gust":26.55,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":1,"pop":0.04,"uvi":10},{"dt":1660590000,"sunrise":1660565532,"sunset":1660615011,"moonrise":1660623360,"moonset":1660580040,"moon_phase":0.64,"temp":{"day":84.2,"min":71.28,"max":90.41,"night":74.01,"eve":86.11,"morn":71.28},"feels_like":{"day":82.27,"night":73.6,"eve":83.73,"morn":70.45},"pressure":1011,"humidity":31,"dew_point":50.5,"wind_speed":9.82,"wind_deg":230,"wind_gust":15.61,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"clouds":9,"pop":0.86,"rain":0.61,"uvi":10},{"dt":1660676400,"sunrise":1660651989,"sunset":1660701331,"moonrise":1660711260,"moonset":1660670520,"moon_phase":0.67,"temp":{"day":67.57,"min":64.58,"max":68.18,"night":65.08,"eve":66.07,"morn":64.58},"feels_like":{"day":67.23,"night":65.05,"eve":66,"morn":64.36},"pressure":1017,"humidity":68,"dew_point":56.55,"wind_speed":15.26,"wind_deg":343,"wind_gust":24.94,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"clouds":100,"pop":0.91,"rain":2.61,"uvi":10},{"dt":1660762800,"sunrise":1660738446,"sunset":1660787650,"moonrise":1660799220,"moonset":1660760820,"moon_phase":0.7,"temp":{"day":67.23,"min":62.1,"max":78.75,"night":70.14,"eve":78.75,"morn":62.71},"feels_like":{"day":66.94,"night":69.67,"eve":78.75,"morn":62.87},"pressure":1018,"humidity":70,"dew_point":56.98,"wind_speed":10.07,"wind_deg":116,"wind_gust":12.48,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"clouds":100,"pop":0.64,"rain":1.82,"uvi":10}],"alerts":[{"sender_name":"NWS
+        Boulder (Northeastern Colorado)","event":"Air Quality Alert","start":1660083000,"end":1660168800,"description":"...OZONE
+        ACTION DAY ALERT FROM 400 PM TUESDAY UNTIL 400 PM\nWEDNESDAY...\nThe Colorado
+        Department of Public Health and Environment has\nissued the following...\nWHAT...Ozone
+        Action Day Alert.\nWHERE...Douglas, Jefferson, Denver, western Arapahoe, western\nAdams,
+        Broomfield, Boulder, Larimer, and Weld Counties\nWHEN...400 PM Tuesday August
+        09 to 400 PM Wednesday August 10\nIMPACTS...Ozone Action Day Alert is now
+        in effect for the Front\nRange Urban Corridor. Requests to limit driving of
+        non-ZEV\nvehicles (i.e., gas or diesel) are now in effect until at least 4\np.m.
+        Wednesday, August 10, 2022.  Hot and sunny weather will allow\nozone to reach
+        levels that are Unhealthy for Sensitive Groups on\nTuesday and Wednesday.
+        The highest concentrations of ozone are\nmost likely for locations in and
+        near the Denver Metro area, as\nwell as northward along the Front Range and
+        lower foothills to\ninclude Boulder, Longmont, and Fort Collins. For areas
+        included in\nthis advisory that are not expected to reach the Unhealthy for\nSensitive
+        Groups (USG) air quality designation, we request that\nactivities, such as
+        driving non-ZEV vehicles (i.e., gas or\ndiesel), be reduced to lessen the
+        impacts on neighboring air\nquality. Additional air pollution in this region
+        may directly\nworsen air quality or contribute to precursors which may also\nadversely
+        affect air quality.  For Colorado air quality\nconditions, forecasts and advisories,
+        visit:\nhttps://www.colorado.gov/airquality/colorado_summary.aspx\nHEALTH
+        INFORMATION...Increasing likelihood of respiratory symptoms\nand breathing
+        discomfort in active children and adults and people\nwith lung disease, such
+        as asthma. Active children and adults, and\npeople with lung disease, such
+        as asthma, should reduce prolonged\nor heavy outdoor exertion.","tags":["Air
+        quality"]}]}'
+  recorded_at: Wed, 10 Aug 2022 17:37:52 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?categories=chinese&latitude=39.738453&longitude=-104.984853
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Authorization
+      User-Agent:
+      - Faraday v2.5.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--uswest2-77d4785ff7-gwnhq; site=public_api_v3
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '5000'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2022-08-11T00:00:00+00:00'
+      X-Zipkin-Id:
+      - eb08403320b82aba
+      Ratelimit-Remaining:
+      - '4975'
+      X-Cloudmap:
+      - routing_uswest2
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-69-130-205-uswest2bprod
+      X-Extlb:
+      - 10-69-130-205-uswest2bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 10 Aug 2022 17:37:53 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8276-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "xM1l4yCBHxBE6J76lNngtA", "alias": "pepper-asian-bistro-denver",
+        "name": "Pepper Asian Bistro", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/XPeL07Tx-rT_f51J-fuN-w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pepper-asian-bistro-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 699, "categories": [{"alias": "asianfusion", "title": "Asian
+        Fusion"}, {"alias": "chinese", "title": "Chinese"}, {"alias": "thai", "title":
+        "Thai"}], "rating": 4.0, "coordinates": {"latitude": 39.7403705, "longitude":
+        -104.9539956}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        {"address1": "2831 E Colfax Ave", "address2": "", "address3": "", "city":
+        "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address":
+        ["2831 E Colfax Ave", "Denver, CO 80206"]}, "phone": "+13033888377", "display_phone":
+        "(303) 388-8377", "distance": 2647.043173283588}, {"id": "6kRbrLNIZKZ1fcjgsTFobg",
+        "alias": "fortune-wok-to-table-denver", "name": "Fortune Wok to Table", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/aVmP8cWwrCsLWWjwx8wvjg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/fortune-wok-to-table-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 370, "categories": [{"alias": "noodles", "title": "Noodles"},
+        {"alias": "dimsum", "title": "Dim Sum"}, {"alias": "shanghainese", "title":
+        "Shanghainese"}], "rating": 4.5, "coordinates": {"latitude": 39.72124, "longitude":
+        -104.9543}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "2817 E 3rd Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80206", "country": "US", "state": "CO", "display_address": ["2817 E 3rd Ave",
+        "Denver, CO 80206"]}, "phone": "+13033217788", "display_phone": "(303) 321-7788",
+        "distance": 3238.7474751681857}, {"id": "NkjpBZfR4455T7uWvtRN-w", "alias":
+        "b\u0103o-brewhouse-denver", "name": "B\u0103o Brewhouse", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/nWj4iNecVc-Aluwky92m-Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/b%C4%83o-brewhouse-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 321, "categories": [{"alias": "dimsum", "title": "Dim Sum"},
+        {"alias": "asianfusion", "title": "Asian Fusion"}, {"alias": "bars", "title":
+        "Bars"}], "rating": 4.0, "coordinates": {"latitude": 39.747743, "longitude":
+        -105.000032}, "transactions": ["delivery", "pickup"], "location": {"address1":
+        "1317 14th St", "address2": null, "address3": "", "city": "Denver", "zip_code":
+        "80202", "country": "US", "state": "CO", "display_address": ["1317 14th St",
+        "Denver, CO 80202"]}, "phone": "+17203248675", "display_phone": "(720) 324-8675",
+        "distance": 1657.1172721266457}, {"id": "AMU4bsCTc6HAa0GAbC4M6Q", "alias":
+        "zoe-ma-ma-denver-2", "name": "Zoe Ma Ma", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/W15Uqya7PNfENroSDxKxRw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/zoe-ma-ma-denver-2?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 539, "categories": [{"alias": "dimsum", "title": "Dim Sum"},
+        {"alias": "taiwanese", "title": "Taiwanese"}], "rating": 3.5, "coordinates":
+        {"latitude": 39.7521648, "longitude": -105.0007797}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "1625 Wynkoop St", "address2": "",
+        "address3": "", "city": "Denver", "zip_code": "80202", "country": "US", "state":
+        "CO", "display_address": ["1625 Wynkoop St", "Denver, CO 80202"]}, "phone":
+        "+13035456262", "display_phone": "(303) 545-6262", "distance": 2088.9149392106274},
+        {"id": "mKRMTGAOQKPIdhi8LKB4Tg", "alias": "little-gingko-asian-cafe-denver-2",
+        "name": "Little Gingko Asian Cafe", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ryUlUNG7Fs-9gx5Ak0yKkg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/little-gingko-asian-cafe-denver-2?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 158, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.7366885730926, "longitude":
+        -104.972055974762}, "transactions": ["delivery", "pickup"], "price": "$$",
+        "location": {"address1": "1279 N Marion St", "address2": "", "address3": null,
+        "city": "Denver", "zip_code": "80218", "country": "US", "state": "CO", "display_address":
+        ["1279 N Marion St", "Denver, CO 80218"]}, "phone": "+13039932327", "display_phone":
+        "(303) 993-2327", "distance": 1111.6803261592327}, {"id": "VOhBjGoL12ss4f0pxBfoVA",
+        "alias": "pepper-asian-bistro-ii-denver", "name": "Pepper Asian Bistro II",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/KZzxO_9sbWFj3C8hmhIWAg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pepper-asian-bistro-ii-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 426, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "asianfusion", "title": "Asian Fusion"}, {"alias": "thai", "title":
+        "Thai"}], "rating": 4.5, "coordinates": {"latitude": 39.769119, "longitude":
+        -105.00202}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        {"address1": "3759 Lipan St", "address2": null, "address3": null, "city":
+        "Denver", "zip_code": "80211", "country": "US", "state": "CO", "display_address":
+        ["3759 Lipan St", "Denver, CO 80211"]}, "phone": "+17205247818", "display_phone":
+        "(720) 524-7818", "distance": 3710.0624857633907}, {"id": "9t2n3LNT9jeMpocJgcYYAA",
+        "alias": "karma-asian-denver", "name": "Karma Asian", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/eGuwCGdb9pj5vHNx-xXoJQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/karma-asian-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 449, "categories": [{"alias": "asianfusion", "title": "Asian
+        Fusion"}, {"alias": "thai", "title": "Thai"}, {"alias": "chinese", "title":
+        "Chinese"}], "rating": 4.0, "coordinates": {"latitude": 39.7161, "longitude":
+        -104.9871299}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        {"address1": "22 S Broadway", "address2": "", "address3": "", "city": "Denver",
+        "zip_code": "80209", "country": "US", "state": "CO", "display_address": ["22
+        S Broadway", "Denver, CO 80209"]}, "phone": "+13038710167", "display_phone":
+        "(303) 871-0167", "distance": 2492.2901449070796}, {"id": "PIg2YoMC44y-K8IT0-vkdw",
+        "alias": "yuan-wonton-food-truck-denver", "name": "Yuan Wonton Food Truck",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/NbvKC2K23VzhauufOIA0hA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/yuan-wonton-food-truck-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 59, "categories": [{"alias": "foodtrucks", "title": "Food
+        Trucks"}, {"alias": "dimsum", "title": "Dim Sum"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.7391214023437, "longitude": -104.988903418924}, "transactions":
+        [], "location": {"address1": "", "address2": "", "address3": null, "city":
+        "Denver", "zip_code": "80012", "country": "US", "state": "CO", "display_address":
+        ["Denver, CO 80012"]}, "phone": "+17209613406", "display_phone": "(720) 961-3406",
+        "distance": 354.2166875134786}, {"id": "DPot7UnOuVLVW29HudomQw", "alias":
+        "great-wall-chinese-restaurant-denver", "name": "Great Wall Chinese Restaurant",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/JluFQ0XuZJnmOm8yjCkVGQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/great-wall-chinese-restaurant-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 297, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 3.0, "coordinates": {"latitude": 39.739906164459, "longitude": -104.981267826754},
+        "transactions": ["delivery", "pickup"], "price": "$", "location": {"address1":
+        "440 E Colfax Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80203", "country": "US", "state": "CO", "display_address": ["440 E Colfax
+        Ave", "Denver, CO 80203"]}, "phone": "+13038326611", "display_phone": "(303)
+        832-6611", "distance": 346.52815283639967}, {"id": "kfTdkvBUiAqqzISm_cq23A",
+        "alias": "hop-alley-denver", "name": "Hop Alley", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/zkRjU2rLUQ5uKqkhGbBUEw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/hop-alley-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 457, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "asianfusion", "title": "Asian Fusion"}, {"alias": "bars", "title":
+        "Bars"}], "rating": 4.0, "coordinates": {"latitude": 39.76702, "longitude":
+        -104.97418}, "transactions": ["delivery"], "price": "$$$", "location": {"address1":
+        "3500 Larimer St", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80205", "country": "US", "state": "CO", "display_address": ["3500 Larimer
+        St", "Denver, CO 80205"]}, "phone": "+17203798340", "display_phone": "(720)
+        379-8340", "distance": 3300.706091883999}, {"id": "fXA9hf0IfVRtvSEc9mxnPw",
+        "alias": "star-kitchen-denver", "name": "Star Kitchen", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/4dkpPrRVdJXCUFl4GdCbZQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/star-kitchen-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 1097, "categories": [{"alias": "dimsum", "title": "Dim Sum"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "cantonese", "title":
+        "Cantonese"}], "rating": 4.0, "coordinates": {"latitude": 39.697298, "longitude":
+        -105.024301}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        {"address1": "2917 W Mississippi Ave", "address2": "Ste 5", "address3": "",
+        "city": "Denver", "zip_code": "80219", "country": "US", "state": "CO", "display_address":
+        ["2917 W Mississippi Ave", "Ste 5", "Denver, CO 80219"]}, "phone": "+13039360089",
+        "display_phone": "(303) 936-0089", "distance": 5685.585540963294}, {"id":
+        "bhdSpHFZc6ViHZPCvItsWQ", "alias": "peters-chinese-cafe-denver", "name": "Peter''s
+        Chinese Cafe", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/0zPhb8CRFl7vbiNbv0Zonw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/peters-chinese-cafe-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 379, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.7353553771973, "longitude":
+        -104.956077575684}, "transactions": ["delivery"], "price": "$", "location":
+        {"address1": "2609 E 12th Ave", "address2": "", "address3": "", "city": "Denver",
+        "zip_code": "80206", "country": "US", "state": "CO", "display_address": ["2609
+        E 12th Ave", "Denver, CO 80206"]}, "phone": "+13033773218", "display_phone":
+        "(303) 377-3218", "distance": 2485.413354507588}, {"id": "yUXr2d9pomzJgmbPl8tlZQ",
+        "alias": "q-house-denver", "name": "Q House", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/j6qTLzzfT31F92HxwrH0ww/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/q-house-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 226, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.7403344229824, "longitude":
+        -104.947235575533}, "transactions": ["delivery", "pickup"], "price": "$$",
+        "location": {"address1": "3421 E Colfax Ave", "address2": "", "address3":
+        null, "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO",
+        "display_address": ["3421 E Colfax Ave", "Denver, CO 80206"]}, "phone": "+17207298887",
+        "display_phone": "(720) 729-8887", "distance": 3223.250768379648}, {"id":
+        "C-7OJJmlpERBVJPcqMkLVA", "alias": "east-tao-denver", "name": "East Tao",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/-LP6oDDET_uFi2nZuR-JJA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/east-tao-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 153, "categories": [{"alias": "ramen", "title": "Ramen"},
+        {"alias": "chinese", "title": "Chinese"}, {"alias": "asianfusion", "title":
+        "Asian Fusion"}], "rating": 3.5, "coordinates": {"latitude": 39.7313958, "longitude":
+        -104.9865269}, "transactions": ["delivery", "pickup"], "price": "$", "location":
+        {"address1": "955 Lincoln St", "address2": "Unit I and H", "address3": null,
+        "city": "Denver", "zip_code": "80203", "country": "US", "state": "CO", "display_address":
+        ["955 Lincoln St", "Unit I and H", "Denver, CO 80203"]}, "phone": "+17206671190",
+        "display_phone": "(720) 667-1190", "distance": 797.671202630891}, {"id": "Z8b6mYueYNTtV4Ku0R6ZUQ",
+        "alias": "new-china-cafe-denver", "name": "New China Cafe", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/vA2vwOuKJSpj0330tZGq4Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/new-china-cafe-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 259, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "breakfast_brunch", "title":
+        "Breakfast & Brunch"}], "rating": 4.0, "coordinates": {"latitude": 39.7114478755004,
+        "longitude": -104.9800956}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "609 E Alameda Ave", "address2": "", "address3": "", "city":
+        "Denver", "zip_code": "80209", "country": "US", "state": "CO", "display_address":
+        ["609 E Alameda Ave", "Denver, CO 80209"]}, "phone": "+13037332833", "display_phone":
+        "(303) 733-2833", "distance": 3030.2678364183926}, {"id": "l0GP-bNK2mJBbSw6FAUkEQ",
+        "alias": "spicy-basil-denver", "name": "Spicy Basil", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/fkPkZhAEdQnypaMu17y4JA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/spicy-basil-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 482, "categories": [{"alias": "thai", "title": "Thai"}, {"alias":
+        "chinese", "title": "Chinese"}, {"alias": "asianfusion", "title": "Asian Fusion"}],
+        "rating": 3.5, "coordinates": {"latitude": 39.7169456892852, "longitude":
+        -104.987726380069}, "transactions": ["delivery", "pickup"], "price": "$",
+        "location": {"address1": "1 Broadway", "address2": "", "address3": "", "city":
+        "Denver", "zip_code": "80203", "country": "US", "state": "CO", "display_address":
+        ["1 Broadway", "Denver, CO 80203"]}, "phone": "+13038718828", "display_phone":
+        "(303) 871-8828", "distance": 2404.092404928905}, {"id": "WCdhbK0vloELM2G9FVesxw",
+        "alias": "little-dragon-denver", "name": "Little Dragon", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/voV5N9vZPcoTRiFIu7pPKw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/little-dragon-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 447, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "noodles", "title": "Noodles"}], "rating": 4.0, "coordinates": {"latitude":
+        39.7369479324908, "longitude": -104.916499257087}, "transactions": ["delivery",
+        "pickup"], "price": "$$", "location": {"address1": "1305 Krameria St", "address2":
+        "Ste G", "address3": "", "city": "Denver", "zip_code": "80220", "country":
+        "US", "state": "CO", "display_address": ["1305 Krameria St", "Ste G", "Denver,
+        CO 80220"]}, "phone": "+13033222128", "display_phone": "(303) 322-2128", "distance":
+        5847.083174708435}, {"id": "yU4hxI-p6LWahcOmquLnAw", "alias": "the-bronze-empire-denver-2",
+        "name": "The Bronze Empire", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/szXuq4fziSkKClZ_6--Nyw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-bronze-empire-denver-2?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 320, "categories": [{"alias": "hotpot", "title": "Hot Pot"},
+        {"alias": "szechuan", "title": "Szechuan"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.6878065497914, "longitude": -104.942380522754}, "transactions":
+        ["delivery", "pickup"], "price": "$$", "location": {"address1": "1591 S Colorado
+        Blvd", "address2": "", "address3": null, "city": "Denver", "zip_code": "80222",
+        "country": "US", "state": "CO", "display_address": ["1591 S Colorado Blvd",
+        "Denver, CO 80222"]}, "phone": "+17205998888", "display_phone": "(720) 599-8888",
+        "distance": 6701.761592383474}, {"id": "fxs9RrByHO9ss-ULhBBxFg", "alias":
+        "chinatown-bistro-denver", "name": "Chinatown Bistro", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/kVoKVW4n3toHjTZ9KnkPpg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/chinatown-bistro-denver?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 35, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.74469, "longitude": -104.97502},
+        "transactions": ["delivery", "pickup"], "location": {"address1": "1789 N Ogden
+        St", "address2": null, "address3": "", "city": "Denver", "zip_code": "80218",
+        "country": "US", "state": "CO", "display_address": ["1789 N Ogden St", "Denver,
+        CO 80218"]}, "phone": "+13038322067", "display_phone": "(303) 832-2067", "distance":
+        1084.2420522505086}, {"id": "UcEfVu23jihjeR_unp2RSQ", "alias": "p-f-changs-denver-2",
+        "name": "P.F. Chang''s", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ea-2sZ2MsTCwC13y04enwg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/p-f-changs-denver-2?adjust_creative=izgmcelmF4K6ZNLCCA-1NA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=izgmcelmF4K6ZNLCCA-1NA",
+        "review_count": 206, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "asianfusion", "title": "Asian Fusion"}], "rating": 3.0, "coordinates":
+        {"latitude": 39.749282, "longitude": -104.999731}, "transactions": ["delivery",
+        "pickup"], "price": "$$", "location": {"address1": "1415 15th St", "address2":
+        "", "address3": "", "city": "Denver", "zip_code": "80202", "country": "US",
+        "state": "CO", "display_address": ["1415 15th St", "Denver, CO 80202"]}, "phone":
+        "+13032607222", "display_phone": "(303) 260-7222", "distance": 1751.5823108663571}],
+        "total": 99, "region": {"center": {"longitude": -104.984853, "latitude": 39.738453}}}'
+  recorded_at: Wed, 10 Aug 2022 17:37:52 GMT
+recorded_with: VCR 6.1.0
