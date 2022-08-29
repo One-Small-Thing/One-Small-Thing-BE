@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: cimg/ruby:2.7.4-node # use a tailored CircleCI docker image.
+      - image: cimg/ruby:3.1.0-node # use a tailored CircleCI docker image.
         auth:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD
@@ -19,7 +19,7 @@ jobs:
     parallelism: 3
     # here we set TWO docker images.
     docker:
-      - image: cimg/ruby:2.7.4-node
+      - image: cimg/ruby:3.1.0-node
         auth:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD
