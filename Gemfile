@@ -51,6 +51,7 @@ gem 'faraday'
 gem 'figaro'
 gem 'jsonapi-serializer'
 gem 'net-http'
+gem 'rack-cors'
 
 group :development, :test do
   gem 'factory_bot_rails'
