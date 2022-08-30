@@ -49,6 +49,7 @@ gem "bootsnap", require: false
 # gem "rack-cors"
 gem 'faraday'
 gem 'figaro'
+gem 'json'
 gem 'jsonapi-serializer'
 gem 'net-http'
 gem 'rack-cors'
