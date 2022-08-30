@@ -11,4 +11,11 @@ class NewsService < BaseService
     end
     get_json(response)
   end
+
+  def self.get_guncontrol_news
+    response = conn_news.get("everything") do |f|
+      f.params['q'] = 'shooting "mass shooting" "gun control" "school shooting"'
+    end
+    get_json(response)
+  end
 end
