@@ -27,5 +27,11 @@ module Types
       Topic.all
     end
 
+    field :headlines, [HeadlineType], null: false
+
+    def headlines
+      NewsFacade.create_general_stories
+    end
+
   end
 end
