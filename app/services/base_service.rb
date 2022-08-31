@@ -5,6 +5,12 @@ class BaseService
     end
   end
 
+  def self.conn_congress
+    Faraday.new(url: "https://api.propublica.org") do |f|
+      f.headers['X-API-KEY'] = ENV['congress_api']
+    end
+  end
+
   def self.get_json(response)
     JSON.parse(response.body, symbolize_names: true)
   end
