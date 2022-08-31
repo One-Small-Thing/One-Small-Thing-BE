@@ -2,12 +2,12 @@
 
 module Types
   class HeadlineType < Types::BaseObject
-    field :date, String, null: false
-    field :author, String, null: false
-    field :title, String, null: false
-    field :content, String, null: false
-    field :img, String, null: false
-
-    
+    field :date, String, null: true
+    field :author, String, null: true
+    field :title, String, null: true
+    field :content, String, null: true
+    field :img, String, null: true
+    field :url, String, null: true
+    field :description, String, null: true
   end
 end
