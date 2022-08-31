@@ -23,7 +23,7 @@ class NewsService < BaseService
   end
 
   def self.get_environmental_news
-    topic_key_words = '"environmental disaster" "natural disaster" "oil spill" "climate change" "ecological disaster"'
+    topic_key_words = '"environmental disaster" OR "natural disaster" OR "oil spill" OR "climate change" OR "ecological disaster"'
     get_topic_call(topic_key_words)
   end
 
@@ -33,17 +33,17 @@ class NewsService < BaseService
   end
 
   def self.get_education_news
-    topic_key_words = 'college "access to education" "student loan debt" "higher education" "literacy rates"'
+    topic_key_words = 'college OR "access to education" OR "student loan debt" OR "higher education" OR "literacy rates"'
     get_topic_call(topic_key_words)
   end
 
   def self.get_fao_comp_news
-    topic_key_words = '"free and open computing" linux gnu kde gnome'
+    topic_key_words = '"free and open computing" OR linux OR gnu kde OR gnome'
     get_topic_call(topic_key_words)
   end
 
   def self.get_domestic_violence_news
-    topic_key_words = '"domestic violence survivor resource" "domestic violence" "domestic disturbance"'
+    topic_key_words = '"domestic violence survivor resource" OR "domestic violence" OR "domestic disturbance"'
     get_topic_call(topic_key_words)
   end
 end
