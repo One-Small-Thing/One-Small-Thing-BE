@@ -8,7 +8,7 @@ class Congress
               :phone
 
   def initialize(data)
-    @full_name = full_name(data)
+    @full_name = format_full_name(data)
     @url = data[:url]
     @party = data[:party]
     @twitter = data[:twitter_account]
@@ -18,7 +18,7 @@ class Congress
   end
 
   private
-    def full_name(data)
+    def format_full_name(data)
       [data[:first_name], " ", data[:last_name]].compact.join
     end
 end
