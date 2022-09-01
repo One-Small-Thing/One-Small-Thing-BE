@@ -27,7 +27,7 @@ module Types
       Topic.all
     end
 
-    field :headlines, [HeadlineType], null: false
+    field :headlines, [HeadlineType], null: true
 
     def headlines
       NewsFacade.create_general_stories
@@ -43,6 +43,14 @@ module Types
       else
         CongressFacade.find_congress_people("")
       end
+    end
+
+    field :stories, [HeadlineType], null: false do
+      argument :name, String, required: true
+    end
+
+    def stories(name:)
+      NewsFacade.create_topic_stories(name)
     end
 
   end
