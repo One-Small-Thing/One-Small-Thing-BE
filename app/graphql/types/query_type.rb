@@ -33,6 +33,18 @@ module Types
       NewsFacade.create_general_stories
     end
 
+    field :congress, [CongressType], null: false do
+      argument :state, String, required: false
+    end
+
+    def congress(state: nil)
+      if state
+        CongressFacade.find_congress_people(state)
+      else
+        CongressFacade.find_congress_people("")
+      end
+    end
+
     field :stories, [HeadlineType], null: false do
       argument :name, String, required: true
     end
@@ -40,5 +52,6 @@ module Types
     def stories(name:)
       NewsFacade.create_topic_stories(name)
     end
+
   end
 end
