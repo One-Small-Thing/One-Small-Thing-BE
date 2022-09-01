@@ -55,6 +55,7 @@ gem 'net-http'
 gem 'rack-cors'
 
 group :development, :test do
+  gem 'debug'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'pry'
