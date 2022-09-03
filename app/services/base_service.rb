@@ -13,9 +13,11 @@ class BaseService
     end
   end
 
-  def self.conn_reps
+  def self.conn_reps(address)
     Faraday.new(url: "https://www.googleapis.com") do |f|
-    f.params('key') = ENV['google_api']
+      f.params['key'] = ENV['google_api']
+      f.params['address'] = address
+    end
   end
 
   def self.get_json(response)
