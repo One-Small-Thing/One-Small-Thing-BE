@@ -1,17 +1,16 @@
 class Representative
-  attr_reader :office,
-              :name,
+  attr_reader :name,
               :address,
               :party,
               :phones,
               :emails
 
-  def initialize(hash)
-    @office = hash[:offices][:name]
-    @name = hash[:officials][:name]
-    @address = hash[:officials][:address]
-    @party = hash[:officials][:party]
-    @phones = hash[:officials][:phones][0]
-    @emails = hash[:officials][:emails][0]
+  def initialize(official)
+    # @office = official[:offices][:name]
+    @name = official[:name]
+    @address = official[:address]
+    @party = official[:party]
+    @phones = official[:phones][0]
+    @emails = official[:emails]
   end
 end
