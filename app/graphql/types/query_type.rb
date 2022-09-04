@@ -53,5 +53,13 @@ module Types
       NewsFacade.create_topic_stories(name)
     end
 
+    field :representatives, [RepresentativeType], null: false do
+      argument :address, String, required: true
+    end
+
+    def representatives(address:)
+      RepresentativeFacade.find_each_rep(address)
+    end
+
   end
 end
