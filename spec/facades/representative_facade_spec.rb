@@ -10,6 +10,5 @@ RSpec.describe RepresentativeFacade, :vcr do
     expect(reps[4][:emails]).to eq(["governorpolis@state.co.us"])
     expect(reps[0][:phones]).to include("(202) 456-1111")
     expect(reps[0][:party]).to eq("Democratic Party")
-    require "pry"; binding.pry
   end
 end
