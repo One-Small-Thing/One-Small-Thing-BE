@@ -1,5 +1,5 @@
 # One Small Thing - BE
-![One Small Thing](/resources/OneSmallThing.png)
+![One Small Thing](/resources/One Small Thing.png)
 
 ## Prerequisites
   * Rails 7.0.3.1
