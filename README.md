@@ -20,6 +20,11 @@
     * `google_api` for the Google Civics API
   * Run `rails s` and navigate to localhost:3000 to connect to the Endpoints
 
+## Testing
+  * [RSpec](https://rspec.info/)
+  * [Postman](https://www.postman.com/)
+  * To run test suite, run `bundle exec rspec` from command line
+
 ## Endpoints
   Receive endpoints from `POST localhost:3000/graphql`
 
