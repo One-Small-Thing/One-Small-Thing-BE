@@ -1,5 +1,5 @@
 # One Small Thing - BE
-![One Small Thing](/resources/One Small Thing.png)
+![One Small Thing](/resources/One_Small_Thing.png)
 
 ## Prerequisites
   * [Rails v7.0.3.1](https://rubyonrails.org/)
