@@ -1,6 +1,5 @@
 # One Small Thing - BE
-
-
+![One Small Thing](/resources/OneSmallThing.png)
 
 ## Prerequisites
   * Rails 7.0.3.1
@@ -98,6 +97,6 @@ mutation {
 ```
 
 ## Database
-
+![Database Schema](/resources/database_schema.png)
 
 ## Authors
