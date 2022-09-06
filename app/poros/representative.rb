@@ -3,14 +3,16 @@ class Representative
               :address,
               :party,
               :phones,
-              :emails
+              :emails,
+              :office
 
-  def initialize(official)
-    # @office = official[:offices][:name]
+  def initialize(official, index)
     @name = official[:name]
     @address = official[:address]
     @party = official[:party]
-    @phones = official[:phones][0]
+    @phones = official[:phones]
     @emails = official[:emails]
+    @office = official[:office]
   end
+
 end
