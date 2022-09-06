@@ -2,10 +2,13 @@
 ![One Small Thing](/resources/One Small Thing.png)
 
 ## Prerequisites
-  * Rails 7.0.3.1
-  * Ruby 3.1.0
-  * Graphql 2.0
-  * API Keys: Propublica, Google Civics API, Newsapi.org
+  * [Rails v7.0.3.1](https://rubyonrails.org/)
+  * [Ruby v3.1.0](https://ruby-lang.org/en/)
+  * [Graphql v2.0](https://graphql.org)
+  * API Keys:
+    * [Propublica](https://projects.propublica.org/api-docs/congress-api/)
+    * [Google Civics API](https://developers.google.com/civic-information)
+    * [Newsapi.org](https://newsapi.org/docs/get-started)
 
 ## Installation
   * Fork & clone this repo
@@ -99,4 +102,8 @@ mutation {
 ## Database
 ![Database Schema](/resources/database_schema.png)
 
-## Authors
+## Authors (links to GitHub)
+ * [Stirling Hostetter](https://github.com/stirlhoss)
+ * [Sai Hall](https://github.com/SaiHall)
+ * [Colin Reinhart](https://github.com/ColinReinhart)
+ * [Matt Deming](https://github.com/Deming-Matt)
