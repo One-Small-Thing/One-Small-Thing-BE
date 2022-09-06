@@ -27,9 +27,9 @@ module Types
       Topic.all
     end
 
-    field :headlines, [HeadlineType], null: true
+    field :top_stories, [TopStoriesType], null: true
 
-    def headlines
+    def top_stories
       NewsFacade.create_general_stories
     end
 
@@ -45,12 +45,20 @@ module Types
       end
     end
 
-    field :stories, [HeadlineType], null: false do
+    field :stories, [TopStoriesType], null: false do
       argument :name, String, required: true
     end
 
     def stories(name:)
       NewsFacade.create_topic_stories(name)
+    end
+
+    field :representatives, [RepresentativeType], null: false do
+      argument :address, String, required: true
+    end
+
+    def representatives(address:)
+      RepresentativeFacade.find_each_rep(address)
     end
 
   end

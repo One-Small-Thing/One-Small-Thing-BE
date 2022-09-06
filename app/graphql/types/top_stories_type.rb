@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Types
-  class HeadlineType < Types::BaseObject
+  class TopStoriesType < Types::BaseObject
     field :date, String, null: true
     field :author, String, null: true
     field :title, String, null: true
