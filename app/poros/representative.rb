@@ -6,7 +6,7 @@ class Representative
               :emails,
               :office
 
-  def initialize(official, index)
+  def initialize(official)
     @name = official[:name]
     @address = official[:address]
     @party = official[:party]

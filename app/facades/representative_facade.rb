@@ -12,7 +12,7 @@ class RepresentativeFacade
       end
     end
 
-    reps[:officials].each_with_index { |official, index| Representative.new(official, index) }
+    reps[:officials].map { |official| Representative.new(official) }
   end
 
 end
