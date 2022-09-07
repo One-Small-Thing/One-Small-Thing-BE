@@ -1,6 +1,6 @@
 # One Small Thing - BE
 ![One Small Thing](/resources/One_Small_Thing.png)
-
+[![One-Small-Thing](https://circleci.com/<VCS>/One-Small-Thing/One-Small-Thing-BE.svg?style=shield)](https://app.circleci.com/pipelines/github/One-Small-Thing/One-Small-Thing-BE)
 ## Prerequisites
   * [Rails v7.0.3.1](https://rubyonrails.org/)
   * [Ruby v3.1.0](https://ruby-lang.org/en/)
@@ -108,7 +108,24 @@ mutation {
 ![Database Schema](/resources/database_schema.png)
 
 ## Authors (links to GitHub)
- * [Stirling Hostetter](https://github.com/stirlhoss)
- * [Sai Hall](https://github.com/SaiHall)
- * [Colin Reinhart](https://github.com/ColinReinhart)
- * [Matt Deming](https://github.com/Deming-Matt)
+  * Stirling Hostetter
+    [GitHub](https://github.com/stirlhoss)
+    [LinkedIn](https://www.linkedin.com/in/colin-reinhart-362083218/)
+  * Sai Hall
+    [GitHub](https://github.com/SaiHall)
+    [LinkedIn](https://www.linkedin.com/in/sai-hall-503710237/)
+  * Colin Reinhart
+    [GitHub](https://github.com/ColinReinhart)
+    [LinkedIn](https://www.linkedin.com/in/colin-reinhart-362083218/)
+  * Jordan Sullivan
+    [GitHub](https://github.com/jordan-sullivan)
+    [LinkedIn](https://www.linkedin.com/in/jordan-sullivan-software-developer/)
+  * Cami Anderson
+    [GitHub](https://github.com/camianderson)
+    [LinkedIn](https://www.linkedin.com/in/camianderson/)
+  * Neil Linton
+    [GitHub](https://github.com/Neil-B-Linton)
+    [LinkedIn](https://www.linkedin.com/in/neil-b-linton/)
+  * Matt Deming
+    [GitHub](https://github.com/Deming-Matt)
+    [LinkedIn](https://www.linkedin.com/in/matthew-deming-1b5793a5/)
