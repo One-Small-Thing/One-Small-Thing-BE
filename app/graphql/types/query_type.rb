@@ -50,7 +50,11 @@ module Types
     end
 
     def stories(name:)
-      NewsFacade.create_topic_stories(name)
+      if name == "Top Stories"
+        NewsFacade.create_general_stories
+      else
+        NewsFacade.create_topic_stories(name)
+      end
     end
 
     field :representatives, [RepresentativeType], null: false do

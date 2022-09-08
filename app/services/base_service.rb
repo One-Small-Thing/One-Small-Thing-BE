@@ -2,7 +2,7 @@ class BaseService
   def self.conn_news
     Faraday.new(url: "https://newsapi.org/v2/") do |req|
       req.headers['X-Api-Key'] = ENV['NEWS_API_KEY']
-      req.params['excludeDomains'] = "theguardian.com,cnn.com,dailynorseman.com,foxnews.com,abcnews.go.com,static.independent.co.uk,www.businessinsider.com,api.time.com,gizmodo.com/,news.yahoo.com/,i.insider.com,cdn.vox-cdn.com/"
+      req.params['excludeDomains'] = "theguardian.com,cnn.com,dailynorseman.com,foxnews.com,abcnews.go.com,static.independent.co.uk,businessinsider.com,api.time.com,gizmodo.com,news.yahoo.com,i.insider.com,cdn.vox-cdn.com,xataka.com"
       req.params['pageSize'] = 20
     end
   end
