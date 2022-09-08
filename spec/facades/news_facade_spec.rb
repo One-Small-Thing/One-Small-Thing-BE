@@ -15,7 +15,7 @@ RSpec.describe NewsFacade, :vcr do
 
     expect(stories).to be_an(Array)
     expect(stories.first).to be_an_instance_of(Story)
-    expect(stories.length).to be(20)
+    expect(stories.length).to be_between(1, 20).inclusive
   end
 
   it 'can make a news story array from a topical news service call' do
@@ -26,7 +26,7 @@ RSpec.describe NewsFacade, :vcr do
 
       expect(stories).to be_an(Array)
       expect(stories.first).to be_an_instance_of(Story)
-      expect(stories.length).to be(20)
+      expect(stories.length).to be_between(1, 20).inclusive
     end
   end
 end
