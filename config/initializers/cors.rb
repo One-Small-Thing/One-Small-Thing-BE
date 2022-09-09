@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "https://one-small-thing.github.io/One-Small-Thing-FE/", "http://localhost:3000", "http://one-small-thing.github.io "
+    origins "https://one-small-thing.github.io/One-Small-Thing-FE/", "http://localhost:3000", "http://one-small-thing.github.io"
 
     resource "*",
       headers: :any,
