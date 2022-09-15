@@ -1,6 +1,8 @@
 # One Small Thing - BE
+**[One Small Thing](https://one-small-thing.github.io/One-Small-Thing-FE/)**
 ![One Small Thing](/resources/One_Small_Thing.png)
-[![One-Small-Thing](https://circleci.com/gh/One-Small-Thing/One-Small-Thing-BE.svg?style=shield)](https://app.circleci.com/pipelines/github/One-Small-Thing/One-Small-Thing-BE)
+[![One-Small-Thing](https://circleci.com/gh/One-Small-Thing/One-Small-Thing-BE.svg?style=shield)](https://app.circleci.com/pipelines/github/One-Small-Thing/One-Small-Thing-BE)  
+
 ## Prerequisites
   * [Rails v7.0.3.1](https://rubyonrails.org/)
   * [Ruby v3.1.0](https://ruby-lang.org/en/)
