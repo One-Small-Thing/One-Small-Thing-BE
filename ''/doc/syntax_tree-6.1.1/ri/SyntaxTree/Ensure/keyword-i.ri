@@ -1,0 +1,4 @@
+U:RDoc::Attr[iI"keyword:ETI"SyntaxTree::Ensure#keyword;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::List:
+@type:
+LABEL:@items[o:RDoc::Markup::ListItem:@label[I"Kw;T;	[o:RDoc::Markup::Paragraph;	[I",the ensure keyword that began this node;T:
+@fileI"lib/syntax_tree/node.rb;T:0@omit_headings_from_table_of_contents_below0F@I"SyntaxTree::Ensure;TcRDoc::NormalClass0

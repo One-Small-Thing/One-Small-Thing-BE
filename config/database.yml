@@ -84,3 +84,4 @@ production:
   database: One_Small_Thing_BE_production
   username: One_Small_Thing_BE
   password: <%= ENV["ONE_SMALL_THING_BE_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>

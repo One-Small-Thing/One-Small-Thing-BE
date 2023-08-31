@@ -1,0 +1,4 @@
+U:RDoc::Attr[iI"definitions:ETI"4SyntaxTree::WithScope::Scope::Local#definitions;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::List:
+@type:
+LABEL:@items[o:RDoc::Markup::ListItem:@label[I"Array[Location];T;	[o:RDoc::Markup::Paragraph;	[I"8The locations of all definitions and assignments of;To;;	[I"this local;T:
+@fileI""lib/syntax_tree/with_scope.rb;T:0@omit_headings_from_table_of_contents_below0F@I"(SyntaxTree::WithScope::Scope::Local;TcRDoc::NormalClass0

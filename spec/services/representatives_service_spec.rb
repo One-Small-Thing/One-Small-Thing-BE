@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe RepresentativeService do
-  it 'can fin reps and their emails by state', :vcr do
+  it 'can find reps and their emails by state', :vcr do
     address = "Colorado"
     reps = RepresentativeService.find_reps(address)
     expect(reps).to be_a(Hash)

@@ -1,0 +1,3 @@
+U:RDoc::Attr[iI"labels:ETI"8SyntaxTree::YARV::ControlFlowGraph::Compiler#labels;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[
+I"KThis is a hash of labels that point to their corresponding index into ;TI"Jthe YARV instruction sequence. Note that this is not the same as the ;TI"Eindex into the list of instructions on the instruction sequence ;TI"Iobject. Instead, this is the index into the C array, so it includes ;TI"operands.;T:
+@fileI"/lib/syntax_tree/yarv/control_flow_graph.rb;T:0@omit_headings_from_table_of_contents_below0F@I"1SyntaxTree::YARV::ControlFlowGraph::Compiler;TcRDoc::NormalClass0

@@ -1,0 +1,4 @@
+U:RDoc::Attr[iI"keywords:ETI" SyntaxTree::Params#keywords;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::List:
+@type:
+LABEL:@items[o:RDoc::Markup::ListItem:@label[I" Array[ [ Label, nil | Node ;T;	[o:RDoc::Markup::Paragraph;	[I"(]] any keyword parameters and their;To;;	[I"optional default values;T:
+@fileI"lib/syntax_tree/node.rb;T:0@omit_headings_from_table_of_contents_below0F@I"SyntaxTree::Params;TcRDoc::NormalClass0

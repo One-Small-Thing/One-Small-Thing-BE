@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"target:ETI"PrettierPrint#target;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"RThe current array of contents that calls to methods that generate print tree ;TI"nodes will append to.;T:
+@fileI"lib/prettier_print.rb;T:0@omit_headings_from_table_of_contents_below0F@I"PrettierPrint;TcRDoc::NormalClass0
