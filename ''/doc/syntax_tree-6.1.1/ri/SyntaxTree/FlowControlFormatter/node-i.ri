@@ -1,0 +1,4 @@
+U:RDoc::Attr[iI"	node:ETI"*SyntaxTree::FlowControlFormatter#node;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::List:
+@type:
+LABEL:@items[o:RDoc::Markup::ListItem:@label[I"Break | Next | Return;T;	[o:RDoc::Markup::Paragraph;	[I"the node being formatted;T:
+@fileI"lib/syntax_tree/node.rb;T:0@omit_headings_from_table_of_contents_below0F@I"%SyntaxTree::FlowControlFormatter;TcRDoc::NormalClass0

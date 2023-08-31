@@ -1,0 +1,4 @@
+U:RDoc::Attr[iI"operator:ETI"!SyntaxTree::RAssign#operator;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::List:
+@type:
+LABEL:@items[o:RDoc::Markup::ListItem:@label[I"Kw | Op;T;	[o:RDoc::Markup::Paragraph;	[I"Cthe operator being used to match against the pattern, which is;To;;	[I"either => or in;T:
+@fileI"lib/syntax_tree/node.rb;T:0@omit_headings_from_table_of_contents_below0F@I"SyntaxTree::RAssign;TcRDoc::NormalClass0

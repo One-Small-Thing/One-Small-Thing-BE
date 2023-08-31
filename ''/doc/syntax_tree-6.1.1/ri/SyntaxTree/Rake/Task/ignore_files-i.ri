@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"ignore_files:ETI"(SyntaxTree::Rake::Task#ignore_files;TI"RW;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"*Glob pattern to ignore source files. ;TI"Defaults to ''.;T:
+@fileI"!lib/syntax_tree/rake/task.rb;T:0@omit_headings_from_table_of_contents_below0F@I"SyntaxTree::Rake::Task;TcRDoc::NormalClass0

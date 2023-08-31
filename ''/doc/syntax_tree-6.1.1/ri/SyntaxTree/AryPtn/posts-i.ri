@@ -1,0 +1,5 @@
+U:RDoc::Attr[iI"
+posts:ETI"SyntaxTree::AryPtn#posts;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::List:
+@type:
+LABEL:@items[o:RDoc::Markup::ListItem:@label[I"Array[ Node ];T;	[o:RDoc::Markup::Paragraph;	[I"9the list of positional arguments occurring after the;To;;	[I""optional star if there is one;T:
+@fileI"lib/syntax_tree/node.rb;T:0@omit_headings_from_table_of_contents_below0F@I"SyntaxTree::AryPtn;TcRDoc::NormalClass0

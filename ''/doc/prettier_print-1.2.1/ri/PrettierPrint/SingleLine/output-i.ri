@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"output:ETI"%PrettierPrint::SingleLine#output;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"IThe output object. It stores rendered text and should respond to <<.;T:
+@fileI"&lib/prettier_print/single_line.rb;T:0@omit_headings_from_table_of_contents_below0F@I"PrettierPrint::SingleLine;TcRDoc::NormalClass0

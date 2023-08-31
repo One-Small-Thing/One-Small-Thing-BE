@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"local_table:ETI"6SyntaxTree::YARV::InstructionSequence#local_table;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I""The table of local variables.;T:
+@fileI"1lib/syntax_tree/yarv/instruction_sequence.rb;T:0@omit_headings_from_table_of_contents_below0F@I"*SyntaxTree::YARV::InstructionSequence;TcRDoc::NormalClass0

@@ -1,0 +1,4 @@
+U:RDoc::Attr[iI"optionals:ETI"!SyntaxTree::Params#optionals;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::List:
+@type:
+LABEL:@items[o:RDoc::Markup::ListItem:@label[I"Array[ [ Ident, Node ;T;	[o:RDoc::Markup::Paragraph;	[I"1]] any optional parameters and their default;To;;	[I"values;T:
+@fileI"lib/syntax_tree/node.rb;T:0@omit_headings_from_table_of_contents_below0F@I"SyntaxTree::Params;TcRDoc::NormalClass0

@@ -1,0 +1,4 @@
+U:RDoc::Attr[iI"else_keyword:ETI"&SyntaxTree::BodyStmt#else_keyword;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::List:
+@type:
+LABEL:@items[o:RDoc::Markup::ListItem:@label[I"nil | Kw;T;	[o:RDoc::Markup::Paragraph;	[I"the optional else keyword;T:
+@fileI"lib/syntax_tree/node.rb;T:0@omit_headings_from_table_of_contents_below0F@I"SyntaxTree::BodyStmt;TcRDoc::NormalClass0

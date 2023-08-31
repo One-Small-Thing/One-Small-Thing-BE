@@ -1,0 +1,4 @@
+U:RDoc::Attr[iI"contents:ETI"7SyntaxTree::ArrayLiteral::QWordsFormatter#contents;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::List:
+@type:
+LABEL:@items[o:RDoc::Markup::ListItem:@label[I"	Args;T;	[o:RDoc::Markup::Paragraph;	[I"the contents of the array;T:
+@fileI"lib/syntax_tree/node.rb;T:0@omit_headings_from_table_of_contents_below0F@I".SyntaxTree::ArrayLiteral::QWordsFormatter;TcRDoc::NormalClass0

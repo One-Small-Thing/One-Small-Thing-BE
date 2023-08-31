@@ -1,0 +1,8 @@
+U:RDoc::Attr[iI"
+parts:ETI"SyntaxTree::MLHS#parts;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"[;To:RDoc::Markup::Verbatim;	[	I"Array[
+;TI"J  ARefField | ArgStar | ConstPathField | Field | Ident | MLHSParen |
+;TI""    TopConstField | VarField
+;TI"]
+;T:@format0o;
+;	[I"?] the parts of the left-hand side of a multiple assignment;T:
+@fileI"lib/syntax_tree/node.rb;T:0@omit_headings_from_table_of_contents_below0F@I"SyntaxTree::MLHS;TcRDoc::NormalClass0

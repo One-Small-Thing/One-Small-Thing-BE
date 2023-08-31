@@ -1,0 +1,4 @@
+U:RDoc::Attr[iI"	name:ETI"SyntaxTree::Field#name;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::List:
+@type:
+LABEL:@items[o:RDoc::Markup::ListItem:@label[I"Const | Ident;T;	[o:RDoc::Markup::Paragraph;	[I")the name of the field being assigned;T:
+@fileI"lib/syntax_tree/node.rb;T:0@omit_headings_from_table_of_contents_below0F@I"SyntaxTree::Field;TcRDoc::NormalClass0

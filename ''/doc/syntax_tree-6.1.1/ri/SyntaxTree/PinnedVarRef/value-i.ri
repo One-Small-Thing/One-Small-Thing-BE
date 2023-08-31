@@ -1,0 +1,5 @@
+U:RDoc::Attr[iI"
+value:ETI"#SyntaxTree::PinnedVarRef#value;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::List:
+@type:
+LABEL:@items[o:RDoc::Markup::ListItem:@label[I"'Const | CVar | GVar | Ident | IVar;T;	[o:RDoc::Markup::Paragraph;	[I"the value of this node;T:
+@fileI"lib/syntax_tree/node.rb;T:0@omit_headings_from_table_of_contents_below0F@I"SyntaxTree::PinnedVarRef;TcRDoc::NormalClass0

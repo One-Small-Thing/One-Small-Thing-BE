@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"options:ETI"'SyntaxTree::YARV::Compiler#options;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"LThese options mirror the compilation options that we currently support ;TI"Dthat can be also passed to RubyVM::InstructionSequence.compile.;T:
+@fileI"%lib/syntax_tree/yarv/compiler.rb;T:0@omit_headings_from_table_of_contents_below0F@I"SyntaxTree::YARV::Compiler;TcRDoc::NormalClass0

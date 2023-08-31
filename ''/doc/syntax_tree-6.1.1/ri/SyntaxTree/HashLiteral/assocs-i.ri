@@ -1,0 +1,4 @@
+U:RDoc::Attr[iI"assocs:ETI"#SyntaxTree::HashLiteral#assocs;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::List:
+@type:
+LABEL:@items[o:RDoc::Markup::ListItem:@label[I" Array[ Assoc | AssocSplat ];T;	[o:RDoc::Markup::Paragraph;	[I"&the optional contents of the hash;T:
+@fileI"lib/syntax_tree/node.rb;T:0@omit_headings_from_table_of_contents_below0F@I"SyntaxTree::HashLiteral;TcRDoc::NormalClass0

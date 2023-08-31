@@ -1,0 +1,4 @@
+U:RDoc::Attr[iI"keyword_rest:ETI"$SyntaxTree::HshPtn#keyword_rest;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::List:
+@type:
+LABEL:@items[o:RDoc::Markup::ListItem:@label[I"nil | VarField;T;	[o:RDoc::Markup::Paragraph;	[I">an optional parameter to gather up all remaining keywords;T:
+@fileI"lib/syntax_tree/node.rb;T:0@omit_headings_from_table_of_contents_below0F@I"SyntaxTree::HshPtn;TcRDoc::NormalClass0
